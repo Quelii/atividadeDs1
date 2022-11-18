@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){  
+    
+    int qtdC, anos, minutos;
+    
+    printf("Quantidade de Cigarros que Fuma por Dia \n");
+    scanf("%d",& qtdC);
+    
+    printf("Digite a Quantos Anos Fuma \n");
+    scanf("%d",&anos);
+    
+    qtdC = (qtdC * 365) * anos;
+    printf("%d \n",qtdC);
+    
+    // 24h é o que vale a 1440 minutos;
+    
+    minutos = 1440 /10;
+    
+    printf("Voce tem :%d dias a menos de vida", qtdC / minutos);
+
+}
